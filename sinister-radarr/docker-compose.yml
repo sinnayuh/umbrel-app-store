@@ -3,6 +3,6 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: sinister-radarr_server_1
+      APP_HOST: radarr
       APP_PORT: 7878
       PROXY_AUTH_ADD: "false"

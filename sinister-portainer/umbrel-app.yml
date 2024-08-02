@@ -1,0 +1,29 @@
+manifestVersion: 1
+id: sinister-portainer
+name: Portainer
+category: Developer Tools
+version: "2.20.3"
+tagline: Self-hosted container management
+icon: https://sinister.codes/img/portainer/icon.svg
+description: >
+  Get up and running in just a few minutes with the industry's most user-friendly container management platform. Achieve fast and error-free deployments, efficient monitoring, and secure operations with our intuitive interface and advanced features.
+developer: Portainer
+website: https://www.portainer.io
+dependencies: []
+repo: https://github.com/portainer/portainer
+support: https://github.com/portainer/portainer/issues
+port: 9000
+gallery:
+  - https://sinister.codes/img/portainer/1.jpg
+  - https://sinister.codes/img/portainer/2.jpg
+  - https://sinister.codes/img/portainer/3.jpg
+path: ""
+defaultPassword: ""
+releaseNotes: >-
+  This update resolves a security vulnerability in Portainer, by creating uniform response time for login attempts.
+  More details can be found at https://github.com/advisories/GHSA-87x6-8m9v-g8c2
+
+
+  Full release notes are found at https://github.com/portainer/portainer/releases.
+submitter: sina
+submission: []

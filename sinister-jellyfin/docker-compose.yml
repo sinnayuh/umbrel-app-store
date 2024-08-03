@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: sinister-jellyfin_server_1
+      APP_PORT: 8096
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: linuxserver/jellyfin:10.9.8@sha256:843878f35dc700e502798b39edb24b84b7b7ff0788f1b7b9b1e71d4f8d34f951
+    restart: on-failure
+    hostname: "${DEVICE_HOSTNAME}"
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - ${UMBREL_ROOT}/data/storage/downloads:/downloads
+    devices:
+      - /dev/dri:/dev/dri # for QSV (Hardware Encoding)
+    ports:
+      # Service auto-discovery
+      - 7359:7359/udp

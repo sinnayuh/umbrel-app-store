@@ -1,0 +1,35 @@
+manifestVersion: 1
+id: sinister-notifiarr
+name: Notifiarr
+category: Developer Tools
+version: "0.8.1"
+tagline: Client for Notifiarr.com 
+icon: https://avatars.githubusercontent.com/u/77931263?s=200&v=4
+description: >
+  This is the unified client for Notifiarr.com. The client enables content requests from Media Bot in your Discord Server and also provides reports for Plex usage and system health among many other features.
+developer: nitsua
+website: https://notifiarr.com
+dependencies: []
+repo: https://github.com/Notifiarr/notifiarr
+support: https://github.com/Notifiarr/notifiarr/issues
+port: 7210
+gallery:
+  - https://camo.githubusercontent.com/9797e01113eb7cadea81f55cc35073bdbfd1b9ac7afe0ec8e8361234ff95e137/68747470733a2f2f67682e6e6f746966696172722e636f6d2f696d672f7265706f2d6c6f676f2e706e67
+path: ""
+defaultPassword: ""
+releaseNotes: >-
+  Moves Windows auto updater to a trigger. It now works correctly in all scenarios.
+  Cleans up backup executables on Windows.
+  Makes X11 GUI support work correctly in Linux.
+  Adds an integrity check so we can identify custom clients.
+  Service check is now disabled when no services to check exist.
+  New trigger interval to send an up-check to the website.
+  Removes home-brew builds.
+  Nvidia-SMI path can now be removed in UI. App will correctly use PATH to find it.
+  Client was, and no longer, sends mysql auth info to the website.
+  Fixes a bug in Arch aur package maker than was putting files in /share instead of /usr/share.
+  Adds auto-start checkbox to GUI menu.
+
+  Full release notes are found at https://github.com/Notifiarr/notifiarr/releases.
+submitter: sina
+submission: []

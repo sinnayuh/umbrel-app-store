@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: sinister-notifiarr_server_1
+      APP_PORT: 5454
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: golift/notifiarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ${APP_DATA_DIR}/data/config:/config
+      - /var/run/utmp:/var/run/utmp
+      - /etc/machine-id:/etc/machine-id
+    restart: on-failure

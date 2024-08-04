@@ -1,19 +1,16 @@
 version: '3.7'
 
 services:
-  app_proxy:
-    environment:
-      APP_HOST: sinister-crafty_server_1
-      APP_PORT: 8443
-      PROXY_AUTH_ADD: "false"
-
-  server:
+  crafty:
+    container_name: sinister-crafty_container
     image: registry.gitlab.com/crafty-controller/crafty-4:latest
-    restart: always
+    restart: unless-stopped
     environment:
         - TZ=Europe/London
     ports:
-        - "8123:8123" # DYNMAP
+        - "8500:8000" # HTTP
+        - "8543:8443" # HTTPS
+        - "8523:8123" # DYNMAP
         - "19132:19132/udp" # BEDROCK
         - "25500-25600:25500-25600" # MC SERV PORT RANGE
     volumes:

@@ -12,7 +12,7 @@ website: https://notifiarr.com
 dependencies: []
 repo: https://github.com/Notifiarr/notifiarr
 support: https://github.com/Notifiarr/notifiarr/issues
-port: 7210
+port: 5454
 gallery:
   - https://camo.githubusercontent.com/9797e01113eb7cadea81f55cc35073bdbfd1b9ac7afe0ec8e8361234ff95e137/68747470733a2f2f67682e6e6f746966696172722e636f6d2f696d672f7265706f2d6c6f676f2e706e67
 path: ""

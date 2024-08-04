@@ -8,6 +8,7 @@ icon: https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/d4/a4/c3/d4a4c336-89
 description: >-
   NextPVR is a whole-home digital video recorder. The NextPVR server can be installed on Windows, Linux, Mac or Docker. Clients are available for a wide range of devices, allowing you access recordings and live TV throughout your home.
 
+  Change password upon first login.
 developer: Nextpvr
 website: https://www.nextpvr.com/
 dependencies: []
@@ -19,8 +20,8 @@ gallery:
   - https://www.nextpvr.com/screens/guide-1-small.jpg
   - https://www.nextpvr.com/screens/guide-2-small.png
 path: ""
-defaultUsername: ""
-defaultPassword: ""
+defaultUsername: "admin"
+defaultPassword: "password"
 releaseNotes: >-
 
 torOnly: false
